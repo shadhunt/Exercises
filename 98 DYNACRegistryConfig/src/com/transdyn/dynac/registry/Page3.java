@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
+import java.awt.Insets;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -94,8 +95,26 @@ public class Page3 {
 		/*
 		 * START construct right panel
 		 */
-		
+		GridBagLayout rightPanelLayout = new GridBagLayout();
+		GridBagConstraints rc = new GridBagConstraints();
+		rc.fill=GridBagConstraints.NONE;
+   	 	rc.insets = new Insets(5,5,5,20);		
+		rc.gridx=0;
+		rc.gridy=0;
+		rc.gridheight=1;
+		rc.gridwidth=1;
+		rc.weightx=0;
+		rc.weighty=0;
 		rightPanel.setSize(800,1200);
+		rightPanel.setLayout(rightPanelLayout);	
+		rightPanel.setSize(800,1200);
+		JPanel blankPanel1 = new JPanel();
+		rightPanel.add(blankPanel1,rc);
+		
+		JLabel connectioStringLabel=new JLabel("Connection String");
+		blankPanel1.add(connectioStringLabel);
+		
+		
 		
 		/*
 		 * END construct right panel
