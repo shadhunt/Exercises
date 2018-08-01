@@ -5,14 +5,14 @@ import javax.swing.table.DefaultTableModel;
 public class TrafficLightModel extends DefaultTableModel{
 
 	static Object[][] p = {
-			{"TrafficLight 1","TL1"}, 
-			{"TrafficLight 2","TL2"}, 
-			{"TrafficLight 3","TL3"},
-			{"TrafficLight 4","TL4"},
-			{"TrafficLight 5","TL5"},
+			{"TrafficLight 1"}, 
+			{"TrafficLight 2",}, 
+			{"TrafficLight 3"},
+			{"TrafficLight 4"},
+			{"TrafficLight 5"},
 	}; 
 	
-	static String[] names= {"name","device-id"};
+	static String[] names= {"name"};
 	
 	
 	@Override

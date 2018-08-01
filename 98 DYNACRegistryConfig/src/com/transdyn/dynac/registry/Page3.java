@@ -7,14 +7,17 @@ import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.Insets;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.WindowConstants;
+import javax.swing.border.TitledBorder;
 
 public class Page3 {
 	
@@ -62,19 +65,19 @@ public class Page3 {
 		/*
 		 * for ESB UTC
 		 */
-		JLabel CommandsItem = new JLabel("Commands");
+//		JLabel CommandsItem = new JLabel("Commands");
 		
 		JTable commandTable = new JTable();
 		commandTable.setPreferredScrollableViewportSize(new Dimension(400,80)); 
 
 		
 		menuPanel.add(manufacturerItem);
-		networkItem.setOpaque(true);
-		CommandsItem.setBackground(Color.lightGray);
+		networkAddrItem.setOpaque(true);
+//		CommandsItem.setBackground(Color.lightGray);
 		
 		menuPanel.add(networkItem);		
 		menuPanel.add(networkAddrItem);	
-		menuPanel.add(CommandsItem);
+//		menuPanel.add(CommandsItem);
 		
 		leftPanel.setSize(100,840);
 	
@@ -103,18 +106,68 @@ public class Page3 {
 		rc.gridy=0;
 		rc.gridheight=1;
 		rc.gridwidth=1;
-		rc.weightx=0;
+		rc.weightx=1;
 		rc.weighty=0;
 		rightPanel.setSize(800,1200);
 		rightPanel.setLayout(rightPanelLayout);	
-		rightPanel.setSize(800,1200);
-		JPanel blankPanel1 = new JPanel();
-		rightPanel.add(blankPanel1,rc);
-		
-		JLabel connectioStringLabel=new JLabel("Connection String");
-		blankPanel1.add(connectioStringLabel);
 		
 		
+		
+		JPanel incomingPanel = new JPanel();
+		JPanel outgoingPanel = new JPanel();
+		
+		JLabel incomingUserLabel = new JLabel("username:");
+		JLabel outgoingUserLabel = new JLabel("username:");
+		
+		JTextField incomingUserTextField = new JTextField(16);
+		JTextField incomingPasswordTextField = new JTextField(16);
+		
+		JLabel incomingPasswordLabel =  new JLabel("password:");
+		JLabel outgoingPasswordLabel = new JLabel("password:");
+		
+		JTextField outgoingUserTextField = new JTextField(16);
+		JTextField outgoingPasswordTextField = new JTextField(16);
+		
+		incomingPanel.add(incomingUserLabel);
+		incomingPanel.add(incomingUserTextField);
+		incomingPanel.add(incomingPasswordLabel);
+		incomingPanel.add(incomingPasswordTextField);
+		
+		
+		outgoingPanel.add(outgoingUserLabel);
+		outgoingPanel.add(outgoingUserTextField);
+		outgoingPanel.add(outgoingPasswordLabel);
+		outgoingPanel.add(outgoingPasswordTextField);		
+		
+		TitledBorder tbIn = BorderFactory.createTitledBorder("Incoming");
+		TitledBorder tbOut = BorderFactory.createTitledBorder("Outgoing");
+		rc.gridx=0;
+		rc.gridy=0;
+		rc.gridwidth=3;
+		rc.weightx=3;
+		rightPanel.add(incomingPanel,rc);
+		incomingPanel.setBorder(tbIn);
+		outgoingPanel.setBorder(tbOut);
+		rc.gridx=0;
+		rc.gridy=1;
+		rc.gridwidth=3;
+		rc.weightx=3;
+		rightPanel.add(outgoingPanel,rc);
+		
+		rc.gridx=0;
+		rc.gridy=2;
+		rc.gridwidth=0;
+		rc.weightx=0;
+		JPanel connectionStringPanel = new JPanel();
+		JLabel connectioStringLabel=new JLabel("Connection String:");
+		
+		connectionStringPanel.add(connectioStringLabel);
+		
+		
+		JTextField connectionStringField = new JTextField(20);
+		connectionStringPanel.add(connectionStringField);
+		
+		rightPanel.add(connectionStringPanel,rc);
 		
 		/*
 		 * END construct right panel

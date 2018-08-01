@@ -47,7 +47,7 @@ public class Page1 {
 
          }
     	 
-    	 String[] typeItems = {"UTC","UTMC Center Controller", "Digital Camera","Video Wall"};
+    	 String[] typeItems = {"UTC","UTMC External Center", "Digital Camera","Video Wall"};
     	 String[] manufacturerItems= {"UTMC"};
     	 JFrame frame = new JFrame();
     	 JDialog dialog = new JDialog(frame, "Registry Object Creation",true);   //dialog用法不对

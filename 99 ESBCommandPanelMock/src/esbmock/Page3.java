@@ -53,6 +53,7 @@ public class Page3 {
         }
    	 
 		JFrame frame = new JFrame("UTC Creation");
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		JPanel leftPanel = new JPanel();
 		JPanel rightPanel = new JPanel();
 		JPanel bottomPanel = new JPanel();
@@ -75,6 +76,7 @@ public class Page3 {
 		
 		CommandTableModel cmdtm=new CommandTableModel();
 		JTable commandTable = new JTable(cmdtm);
+		commandTable.getColumnModel().getColumn(2).setCellRenderer(new ButtonRenderer());
 		commandTable.setPreferredScrollableViewportSize(new Dimension(700,300)); 
 
 		
@@ -223,7 +225,7 @@ public class Page3 {
 		
 		frame.setSize(1200, 450);
 		
-		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
 		
 		
 		frame.setVisible(true);

@@ -81,7 +81,7 @@ public class Page4 {
 
 		
 		menuPanel.add(manufacturerItem);
-		CommandsItem.setOpaque(true);
+		networkAddrItem.setOpaque(true);
 		CommandsItem.setBackground(Color.lightGray);
 		
 		menuPanel.add(networkItem);		
