@@ -12,7 +12,7 @@ public class CommandTableModel extends DefaultTableModel{
             {"Command 5","Service name5",""}                
 	}; 
 	
-	static String[] names= {"Command Name","Description", "",};
+	static String[] names= {"Command Name","Description", "Details",};
 	
 	
 	@Override
@@ -26,9 +26,6 @@ public class CommandTableModel extends DefaultTableModel{
 		super(p,names);
 		// TODO Auto-generated constructor stub
 	}
-
-
-
 
 
 	@Override
