@@ -46,7 +46,7 @@ public class Page3 {
 
         }
    	 
-		JFrame frame = new JFrame("Digital Camera Creation");
+		JFrame frame = new JFrame("UTC Creation");
 		JPanel leftPanel = new JPanel();
 		JPanel rightPanel = new JPanel();
 		JPanel bottomPanel = new JPanel();
