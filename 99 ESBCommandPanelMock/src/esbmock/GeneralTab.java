@@ -417,6 +417,19 @@ public class GeneralTab extends javax.swing.JFrame {
                 "Command Name", "Status"
             }
         ));
+        TopicTabs.addTab("Driver", jPanel8);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Command Name", "Status"
+            }
+        ));
         jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);

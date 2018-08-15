@@ -74,9 +74,9 @@ public class Page3 {
 		 */
 		JLabel CommandsItem = new JLabel("Commands");
 		
-		CommandTableModel cmdtm=new CommandTableModel();
+		NoDetailCommandTableModel cmdtm=new NoDetailCommandTableModel();
 		JTable commandTable = new JTable(cmdtm);
-		commandTable.getColumnModel().getColumn(2).setCellRenderer(new ButtonRenderer());
+//		commandTable.getColumnModel().getColumn(2).setCellRenderer(new ButtonRenderer());
 		commandTable.setPreferredScrollableViewportSize(new Dimension(700,300)); 
 
 		
@@ -117,8 +117,8 @@ public class Page3 {
 				
 		JButton addButton = new JButton("Add");
 		addButton.setSize(new Dimension(50,20));
-		JButton delButton = new JButton("Remove");
-		JButton modifyButton = new JButton("Edit");
+		JButton delButton = new JButton("Modify");
+		JButton modifyButton = new JButton("Remove");
 		adc.fill=adc.NONE;
 		adc.gridx=0;
 		adc.gridy=0;

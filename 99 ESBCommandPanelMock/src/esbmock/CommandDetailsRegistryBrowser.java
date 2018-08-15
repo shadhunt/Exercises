@@ -77,6 +77,9 @@ public class CommandDetailsRegistryBrowser
 		JTextField externalRefTextField = new JTextField(40);		
 		JLabel serviceNameLabel = new JLabel("No Predefined Service Name");
 		JTextField serviceNameTextField = new JTextField(40);
+		JLabel customServiceLabel = new JLabel("Custom Service Paramter");
+		JTextField customServiceTextField = new JTextField(40);
+		
 		JLabel countryLabel = new JLabel("Country");
 		JTextField countryTextField = new JTextField(20);
 		JLabel nationIdLabel = new JLabel("Nation ID");
@@ -87,8 +90,7 @@ public class CommandDetailsRegistryBrowser
 		JTextField reqNationIDTextField = new JTextField(20);
 		
 		
-		JButton okButton = new JButton("OK");
-		JButton cancelButton = new JButton("Cancel");
+		JButton closeButton = new JButton("Close");		
 		namePanel.setLayout(new GridBagLayout());
 		gc.gridx = 0;
 		gc.gridy = 0;
@@ -208,7 +210,11 @@ public class CommandDetailsRegistryBrowser
 		gc.gridx=1;
 		gc.gridy=1;
 		paramPanel.add(serviceNameTextField,gc);
-		
+		gc.gridx=0;
+		gc.gridy=2;
+		paramPanel.add(customServiceLabel,gc);
+		gc.gridx=1;
+		paramPanel.add(customServiceTextField,gc);
 		/*
 		 * END Param Panel
 		 */
@@ -239,8 +245,7 @@ public class CommandDetailsRegistryBrowser
 		
 		Label blankLabel = new Label("                                                                        ");
 		lowPanel.add(blankLabel);
-		lowPanel.add(okButton);
-		lowPanel.add(cancelButton);	
+		lowPanel.add(closeButton);		
 		
 		
 		frame.add(mainPanel,BorderLayout.CENTER);

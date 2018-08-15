@@ -59,25 +59,25 @@ public class Page3 {
 		GridLayout menuPanelLayout =new GridLayout(20,1);
 		menuPanel.setLayout(menuPanelLayout);
 		
-		JLabel manufacturerItem = new JLabel("Manufacturer");
+//		JLabel manufacturerItem = new JLabel("Manufacturer");
 		JLabel networkItem = new JLabel("Network"); 
 		JLabel networkAddrItem = new JLabel("Network Address");
 		/*
 		 * for ESB UTC
 		 */
-//		JLabel CommandsItem = new JLabel("Commands");
+		JLabel CommandsItem = new JLabel("Traffic Lights");
 		
 		JTable commandTable = new JTable();
 		commandTable.setPreferredScrollableViewportSize(new Dimension(400,80)); 
 
 		
-		menuPanel.add(manufacturerItem);
+//		menuPanel.add(manufacturerItem);                        /*removed manufacturer page*/
 		networkAddrItem.setOpaque(true);
 //		CommandsItem.setBackground(Color.lightGray);
 		
 		menuPanel.add(networkItem);		
 		menuPanel.add(networkAddrItem);	
-//		menuPanel.add(CommandsItem);
+		menuPanel.add(CommandsItem);
 		
 		leftPanel.setSize(100,840);
 	

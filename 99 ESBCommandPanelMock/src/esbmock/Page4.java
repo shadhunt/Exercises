@@ -77,7 +77,7 @@ public class Page4 {
 		
 		TrafficLightModel cmdtm=new TrafficLightModel();
 		JTable commandTable = new JTable(cmdtm);
-		commandTable.setPreferredScrollableViewportSize(new Dimension(600,300)); 
+		commandTable.setPreferredScrollableViewportSize(new Dimension(300,100)); 
 
 		
 		menuPanel.add(manufacturerItem);
@@ -116,9 +116,12 @@ public class Page4 {
 		addDelPanel.setLayout(addDelLayout);				
 		
 		JButton addButton = new JButton("Add");
+//		addButton.setEnabled(false);
 		addButton.setSize(new Dimension(50,20));
 		JButton delButton = new JButton("Remove");
-		JButton editButton = new JButton("Edit");
+//		delButton.setEnabled(false);
+		JButton editButton = new JButton("Modify");
+//		editButton.setEnabled(false);
 		adc.fill=adc.NONE;
 		adc.gridx=0;
 		
@@ -129,11 +132,11 @@ public class Page4 {
 		adc.gridx=1;
 
 		
-		addDelPanel.add(delButton, adc);
+		addDelPanel.add(editButton, adc);
 		adc.fill=adc.NONE;
 		adc.gridx=2;
 
-		addDelPanel.add(editButton,adc);
+		addDelPanel.add(delButton,adc);
 		
 		BorderLayout rightPanelLayout = new BorderLayout();
         TitledBorder connStrTb = BorderFactory.createTitledBorder("");        

@@ -69,13 +69,15 @@ public class CommandDetails
 		JTextField externalRefTextField = new JTextField(40);		
 		JLabel serviceNameLabel = new JLabel("No Predefined Service Name");
 		JTextField serviceNameTextField = new JTextField(40);
+		JLabel customServiceLabel = new JLabel("Custom Service Paramter");
+		JTextField customServiceTextField = new JTextField(40);
 		JLabel countryLabel = new JLabel("Country");
 		JTextField countryTextField = new JTextField(20);
 		JLabel nationIdLabel = new JLabel("Nation ID");
 		JTextField nationIdTextField = new JTextField(20);
 		
 		JButton okButton = new JButton("OK");
-		JButton cancelButton = new JButton("Terminate");
+		JButton cancelButton = new JButton("Cancel");
 		namePanel.setLayout(new GridBagLayout());
 		gc.gridx = 0;
 		gc.gridy = 0;
@@ -110,6 +112,12 @@ public class CommandDetails
 		gc.gridx=1;
 		gc.gridy=1;
 		paramPanel.add(serviceNameTextField,gc);
+		gc.gridx=0;
+		gc.gridy=2;
+		paramPanel.add(customServiceLabel,gc);
+		gc.gridx=1;
+		gc.gridy=2;
+		paramPanel.add(customServiceTextField,gc);
 		
 		implPanel.setLayout(new GridBagLayout());
 		implPanel.setBorder(BorderFactory.createTitledBorder("Service Implementer"));

@@ -64,15 +64,15 @@ public class Page2 {
 		/*
 		 * for ESB UTC
 		 */
-//		JLabel CommandsItem = new JLabel("External Center");
+		JLabel CommandsItem = new JLabel("Traffic Lights");
 		
-		menuPanel.add(manufacturerItem);
+//		menuPanel.add(manufacturerItem);                                   /*no manufacturer page*/
 		networkItem.setOpaque(true);
 		networkItem.setBackground(Color.lightGray);
 		
 		menuPanel.add(networkItem);		
 		menuPanel.add(networkAddrItem);	
-//		menuPanel.add(CommandsItem);
+		menuPanel.add(CommandsItem);
 		
 		
 		leftPanel.setSize(100,840);
