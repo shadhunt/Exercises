@@ -75,9 +75,11 @@ public class Page4 {
 		 */
 		JLabel CommandsItem = new JLabel("Traffic Lights");
 		
-		TrafficLightModel cmdtm=new TrafficLightModel();
+		
+		/* can be changed to other table model*/
+		CommandTableModel cmdtm=new CommandTableModel();
 		JTable commandTable = new JTable(cmdtm);
-		commandTable.setPreferredScrollableViewportSize(new Dimension(300,100)); 
+		commandTable.setPreferredScrollableViewportSize(new Dimension(600,300)); 
 
 		
 		menuPanel.add(manufacturerItem);
@@ -220,7 +222,7 @@ public class Page4 {
 		
 		
 		
-		frame.setSize(1200, 450);
+		frame.setSize(850, 450);
 		
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		

@@ -77,7 +77,7 @@ public class Page3 {
 		
 		menuPanel.add(networkItem);		
 		menuPanel.add(networkAddrItem);	
-		menuPanel.add(CommandsItem);
+//		menuPanel.add(CommandsItem);
 		
 		leftPanel.setSize(100,840);
 	
@@ -159,7 +159,7 @@ public class Page3 {
 		rc.gridwidth=0;
 		rc.weightx=0;
 		JPanel connectionStringPanel = new JPanel();
-		JLabel connectioStringLabel=new JLabel("Connection String:");
+		JLabel connectioStringLabel=new JLabel("Web Service URL:");
 		
 		connectionStringPanel.add(connectioStringLabel);
 		

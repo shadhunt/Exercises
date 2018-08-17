@@ -5,14 +5,14 @@ import javax.swing.table.DefaultTableModel;
 public class CommandTableModel extends DefaultTableModel{
 
 	static Object[][] p = {
-			{"Command 1","Service name1",""}, 
-            {"Command 2","Service name2",""}, 
-            {"Command 3","Service name3",""}, 
-            {"Command 4","Service name4",""}, 
-            {"Command 5","Service name5",""}                
+			{"Command 1","Service name1","Sent"}, 
+            {"Command 2","Service name2","Sent"}, 
+            {"Command 3","Service name3","Canceled"}, 
+            {"Command 4","Service name4","Canceled"}, 
+            {"Command 5","Service name5","Canceled"}                
 	}; 
 	
-	static String[] names= {"Command Name","Description", "Details",};
+	static String[] names= {"Command Name","Description", "Status",};
 	
 	
 	@Override

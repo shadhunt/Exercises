@@ -6,7 +6,7 @@ public class TrafficLightModel extends DefaultTableModel{
 
 	static Object[][] p = {
 			{"TrafficLight 1"}, 
-			{"TrafficLight 2",}, 
+			{"TrafficLight 2"}, 
 			{"TrafficLight 3"},
 			{"TrafficLight 4"},
 			{"TrafficLight 5"},
