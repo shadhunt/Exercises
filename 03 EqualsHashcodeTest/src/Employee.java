@@ -23,11 +23,11 @@ public class Employee {
 
 	@Override
 	public boolean equals(Object obj) {
-		System.out.println("equals??");
-		System.out.println(this.getFirstName());
-		System.out.println(((Employee)obj).getFirstName());
-		System.out.println(this.getLastName());
-		System.out.println(((Employee)obj).getLastName());
+//		System.out.println("equals??");
+//		System.out.println(this.getFirstName());
+//		System.out.println(((Employee)obj).getFirstName());
+//		System.out.println(this.getLastName());
+//		System.out.println(((Employee)obj).getLastName());
 		
 		if(this==obj)
 		{
@@ -35,7 +35,13 @@ public class Employee {
 			System.out.println("obj hash:"+obj);
 			System.out.println("Equals by same object has code");
 		}
-		if(this.getFirstName().equals(((Employee)obj).getFirstName()) && this.getLastName().equals(((Employee)obj).getLastName()))
+		
+		
+		/*
+		 *  comparing the two String with the equals method and the ==, the result is same.
+		 */
+//		if(this.getFirstName().equals(((Employee)obj).getFirstName()) && this.getLastName().equals(((Employee)obj).getLastName()))	
+		if(this.getFirstName()==((Employee)obj).getFirstName() && this.getLastName()==((Employee)obj).getLastName())
 		{
 			System.out.println("Employee equals");
 			
