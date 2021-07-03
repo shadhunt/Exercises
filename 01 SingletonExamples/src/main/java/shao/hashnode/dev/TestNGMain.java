@@ -37,10 +37,20 @@ public class TestNGMain {
   }
   @BeforeMethod
   public void beforeMethod() {	  
-//	  singletonObject = new Singleton1(); this doesn't work because the constructor is private	  
-	  singletonObject1 = Singleton1.getInstance();
-	  singletonObject2 = Singleton1.getInstance();
+//	  singletonObject = new Singleton1(); this doesn't work because the constructor is private	 
 	  
+	  /**
+	   * test case of Lazy Initialization singleton 
+	   */
+	  /*
+	  singletonObject1 = Singleton1.getInstance();
+	  singletonObject2 = Singleton1.getInstance();*/
+	  
+	  /**
+	   * test case of Eager Initialization singleton 
+	   */
+	  singletonObject1 = Singleton2.getInstance();
+	  singletonObject2 = Singleton2.getInstance();
   }
 
   @AfterMethod
