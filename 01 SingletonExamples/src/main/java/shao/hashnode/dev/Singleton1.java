@@ -9,6 +9,14 @@ final class Singleton1 implements SingletonInterface{       //'final' prevent in
 	
 	public static Singleton1 getInstance()
 	{
-		return singletonObj;
+		if(singletonObj==null)
+		{
+			singletonObj = new Singleton1();
+			return singletonObj;
+		}
+		else
+		{
+			return singletonObj;
+		}		
 	}
 }

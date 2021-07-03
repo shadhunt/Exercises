@@ -13,6 +13,8 @@ public class TestNGMain {
 	  if(singletonObject1==singletonObject2)
 	  {
 		  System.out.println("same object");
+		  System.out.println("singletonObj1="+singletonObject1);
+		  System.out.println("singletonObj2="+singletonObject2);
 	  }
 	  else
 	  {
