@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="63" started-at="2021-07-02T23:54:20 EDT" finished-at="2021-07-02T23:54:20 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="63" started-at="2021-07-02T23:54:20 EDT" finished-at="2021-07-02T23:54:20 EDT">
+      <class name="shao.hashnode.dev.TestNGMain">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:shao.hashnode.dev.TestNGMain@26aa12dd]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-07-02T23:54:20 EDT" finished-at="2021-07-02T23:54:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:shao.hashnode.dev.TestNGMain@26aa12dd]" name="f" duration-ms="0" started-at="2021-07-02T23:54:20 EDT" finished-at="2021-07-02T23:54:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:shao.hashnode.dev.TestNGMain@26aa12dd]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-07-02T23:54:20 EDT" finished-at="2021-07-02T23:54:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- shao.hashnode.dev.TestNGMain -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
