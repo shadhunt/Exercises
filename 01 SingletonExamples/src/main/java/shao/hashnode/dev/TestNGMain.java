@@ -49,8 +49,16 @@ public class TestNGMain {
 	  /**
 	   * test case of Eager Initialization singleton 
 	   */
+	  /*
 	  singletonObject1 = Singleton2.getInstance();
 	  singletonObject2 = Singleton2.getInstance();
+	  */
+	  
+	  /**
+	   * test case of Bill Pugh's singleton
+	   */
+	  singletonObject1 = Singleton3.SingletonCreator.getInstance();
+	  singletonObject2 = Singleton3.SingletonCreator.getInstance();
   }
 
   @AfterMethod
